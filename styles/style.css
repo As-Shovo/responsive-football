@@ -14,4 +14,201 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+.container{
+    display: flex;
+    justify-content: center;
+}
 
+
+/* --------------------------------------header section style---------------------------------------------  */
+header{
+    background-color: #2D25A0;
+}
+
+/* --------------------------------------Navbar section style---------------------------------------------  */
+
+.navbar{
+    display: flex;
+    justify-content: center;
+
+}
+
+.nav-items{
+    display: flex;
+    width: 1200px;
+    padding-top: 42px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-item ul li{
+    display: inline-block;
+    /* list-style: none; */
+    margin-right: 36px;
+}
+
+.nav-item ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.nav-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 123px;
+    height: 44px;
+    background-color: #E02C6D;
+}
+.nav-login a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.fixed{
+    margin: 5px;
+}
+/*--------------------------------------Hero section style-------------------------------------- */
+
+.hero{
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0 80px 0;
+}
+
+.title-text {
+    color: #FFFFFF;
+    font-size: 64px;
+}
+
+.btn{
+    width: 168px;
+    height: 44px;
+    margin-top: 30px;
+    background-color: #E02C6D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    padding: 10 0;
+}
+
+.hero-image img{
+    width: 556px;
+    height: 456px;
+}
+
+/*--------------------------------------End of Header section -------------------------------------- */
+
+
+/* --------------------------------------main section style ------------------------------------------*/
+
+/* --------------------------------------players Card section style ------------------------------------------*/
+
+
+.all-players{
+    margin: 90px 0 40px;
+}
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px ;
+}
+
+
+.player-card{
+    width: 330px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+
+}
+
+.player-info{
+    padding: 15px;
+}
+
+.player-info img{
+    width: 300px;
+    height: 256px;
+}
+
+.player-info h3{
+    font-size: 24px;
+}
+
+.player-info p{
+    margin-top: 5px;
+}
+
+/* --------------------------------------End of players Card section style ------------------------------------------*/
+
+
+/* --------------------------------------Blog area section style ------------------------------------------*/
+
+.blog-area{
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 90px 0 120px 0;
+}
+
+.blog-info{
+    width: 500px;
+}
+
+.title-text2 {
+    color: #0A0826;
+    font-size: 48px;
+}
+
+.blog-thumbnil img{
+    width: 567px;
+    height: 427px;
+}
+
+/* --------------------------------------End of Blog area section style ------------------------------------------*/
+
+/* -------------------------------------- footer style ------------------------------------------*/
+
+.footer-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0 50px;
+}
+
+
+
+.footer-img img{
+    width: 480px;
+}
+
+.footer-icon{
+    color:  #969BAB;
+    margin-top: 20px;
+}
+
+.footer-icon i{
+    font-size: 18px;
+    padding: 15px;
+    margin: 5px;
+    background-color: #e9e9e9;
+    border-radius: 30px;
+}
+
+.footer-copyright{
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* --------------------------------------End of footer style ------------------------------------------*/
