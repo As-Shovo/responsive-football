@@ -36,7 +36,7 @@ header{
 .nav-items{
     display: flex;
     width: 1200px;
-    padding-top: 42px;
+    padding: 40px 0 10px;
     align-items: center;
     justify-content: space-between;
 }
@@ -53,6 +53,10 @@ header{
     font-size: 16px;
 }
 
+.nav-item ul li a:hover{
+    color: #E02C6D;
+}
+
 .nav-login {
     display: flex;
     align-items: center;
@@ -60,6 +64,12 @@ header{
     width: 123px;
     height: 44px;
     background-color: #E02C6D;
+    transition: width 1s ;
+}
+
+.nav-login:hover{
+    background-color: #e61c37;
+    width: 150px;
 }
 .nav-login a{
     text-decoration: none;
@@ -74,9 +84,9 @@ header{
 
 .hero{
     display: flex;
-    width: 1200px;
     justify-content: space-between;
     align-items: center;
+    width: 1200px;
     margin: 50px 0 80px 0;
 }
 
@@ -93,7 +103,14 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: width 1s;
 }
+
+.btn:hover{
+    width: 180px;
+    background-color: #e61c37;
+}
+
 .btn a{
     text-decoration: none;
     color: #FFFFFF;
@@ -129,7 +146,10 @@ header{
 .player-card{
     width: 330px;
     box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+}
 
+.player-card:hover .player-info img{
+    transform: scale(1.05);
 }
 
 .player-info{
@@ -139,6 +159,7 @@ header{
 .player-info img{
     width: 300px;
     height: 256px;
+    transition: transform 1s;
 }
 
 .player-info h3{
@@ -162,10 +183,6 @@ header{
     margin: 90px 0 120px 0;
 }
 
-.blog-info{
-    width: 500px;
-}
-
 .title-text2 {
     color: #0A0826;
     font-size: 48px;
@@ -178,19 +195,109 @@ header{
 
 /* --------------------------------------End of Blog area section style ------------------------------------------*/
 
+/* --------------------------------------News area section style ------------------------------------------*/
+
+.news{
+    width: 1200px;
+}
+
+.news a:hover .news-items{
+    background-color: #ececec;
+}
+
+.news h1{
+    font-size: 35px;
+}
+
+.news a{
+    text-decoration: none;
+    color: #0A0826;
+}
+
+.news-items{
+    display: flex;
+    align-items: center;
+}
+
+.news-thumbnil img{
+    width: 560px;
+    margin-top: 10px;
+}
+
+.news-info{
+    padding-left: 50px ;
+}
+
+.news-info h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.news-info p{
+    margin-top: 15px;
+}
+
+/* --------------------------------------End of News area section style ------------------------------------------*/
+
+/* --------------------------------------Ratting section style ------------------------------------------*/
+
+.ranking{
+    margin: 80px 0 30px;
+}
+
+.ranking h1{
+    font-size: 35px;
+}
+.players-rank{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    margin-top: 10px;
+}
+
+
+.player-rank{
+    width: 280px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 2s;
+}
+
+.player-rank:hover{
+    transform: rotate(5deg);
+}
+
+
+.player-img img{
+    width: 250px;
+    margin: 15px;
+}
+
+.player-ratting i{
+    font-size: 24px;
+}
+
+.fa-star.filled{
+    color: #FFC014;
+}
+.fa-star.empty{
+    color: #AEAEAE;
+}
+
+
 /* -------------------------------------- footer style ------------------------------------------*/
 
 .footer-area{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px 0 50px;
+    margin: 80px 0 50px;
 }
 
 
 
 .footer-img img{
-    width: 480px;
+    width: 440px;
 }
 
 .footer-icon{
@@ -212,3 +319,78 @@ header{
 }
 
 /* --------------------------------------End of footer style ------------------------------------------*/
+
+
+
+/* --------------------------------------For Mobile Device style ------------------------------------------*/
+
+ /* Media Queries */
+
+ @media only screen and (max-width:688px){
+
+    /* header section  */
+    .hero, .blog-area, .news-items{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .title-text{
+        font-size: 30px;
+    }
+    
+    
+    .hero-image img{
+        margin-top: 36px;
+        width: 347px;
+        height: 273px;
+        /* display: none; */
+    }
+    /* header section  */
+    .blog-area{
+        margin: 10px;
+        justify-content: center;
+    }
+
+
+    .title-text2 {
+        font-size: 30px;
+    }
+
+    .blog-thumbnil img{
+        margin-top: 36px;
+        width: 328px;
+        height: 248px;
+    }
+
+    /* --------------------------- */
+
+    .news, .ranking, .news-info{
+        margin: 10px;
+    }
+    .news-info{
+        padding: 0 ;
+    }
+
+    .news h1{
+        font-size: 25px;
+    }
+
+
+    .news-thumbnil img{
+        width: 336px;
+        height: 188px;
+    }
+
+    .players, .players-rank {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .footer-img img{
+        width: 250px;
+    }
+
+     .navbar{
+         display: none;
+     }
+ }
