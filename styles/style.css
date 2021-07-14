@@ -55,6 +55,7 @@ header{
 
 .nav-item ul li a:hover{
     color: #E02C6D;
+    cursor: pointer;
 }
 
 .nav-login {
@@ -70,6 +71,7 @@ header{
 .nav-login:hover{
     background-color: #e61c37;
     width: 150px;
+    cursor: pointer;
 }
 .nav-login a{
     text-decoration: none;
@@ -109,6 +111,7 @@ header{
 .btn:hover{
     width: 180px;
     background-color: #e61c37;
+    cursor: pointer;
 }
 
 .btn a{
@@ -150,6 +153,7 @@ header{
 
 .player-card:hover .player-info img{
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 .player-info{
@@ -203,6 +207,7 @@ header{
 
 .news a:hover .news-items{
     background-color: #ececec;
+    cursor: pointer;
 }
 
 .news h1{
@@ -265,6 +270,7 @@ header{
 
 .player-rank:hover{
     transform: rotate(5deg);
+    cursor: pointer;
 }
 
 
@@ -364,6 +370,7 @@ header{
 
     /* --------------------------- */
 
+
     .news, .ranking, .news-info{
         margin: 10px;
     }
@@ -381,6 +388,10 @@ header{
         height: 188px;
     }
 
+    .players-rank{
+        padding-left: 25px;
+    }
+
     .players, .players-rank {
         grid-template-columns: repeat(1, 1fr);
 
@@ -393,4 +404,44 @@ header{
      .navbar{
          display: none;
      }
+ }
+
+ @media only screen and (min-width:688px) and (max-width:992px){
+
+
+    .hero-image img{
+        margin-top: 36px;
+    }
+
+    .hero, .blog-area, .news-items{
+        flex-direction: column;
+        align-items: center;
+    }
+    .blog-area{
+        margin: 10px;
+        justify-content: center;
+    }
+
+    .blog-info{
+        margin-left: 50px;
+    }
+
+    .blog-thumbnil img{
+        margin-top: 36px;
+    }
+    .news h1{
+        margin-left: 50px;
+    }
+    .news p{
+        margin-left: 50px;
+    }
+
+    .news, .ranking, .news-info{
+        margin: 10px;
+    }
+
+    .players, .players-rank {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
  }
